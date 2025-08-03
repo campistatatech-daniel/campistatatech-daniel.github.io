@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito - Farmacia SaludConecta</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+<body>
+    <h1>Tu carrito</h1>
+    <div id="carrito-contenido"></div>
+    <script>
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const contenedor = document.getElementById('carrito-contenido');
+
+        if (carrito.length === 0) {
+            contenedor.innerHTML = "<p>Tu carrito está vacío.</p>";
+        } else {
+            let total = 0;
+            const lista = carrito.map(item => {
+                total += item.precio;
+                return `<li>${item.nombre} - $${item.precio.toLocaleString()} COP</li>`;
+            }).join('');
+            contenedor.innerHTML = `
+                <ul>${lista}</ul>
+                <p><strong>Total:</strong> $${total.toLocaleString()} COP</p>
+            `;
+        }
+    </script>
+    <button id="borrar-carrito">Vaciar carrito</button>
+    <script>
+        document.getElementById('borrar-carrito').addEventListener('click', () => {
+            localStorage.removeItem('carrito');
+            contenedor.innerHTML = "<p>Tu carrito está vacío.</p>";
+        });
+
+        const botonPagar = document.createElement('button');
+        botonPagar.textContent = 'Pagar';
+        botonPagar.id = 'boton-pagar';
+        document.body.appendChild(botonPagar);
+    </script>
+</body>
+</html>

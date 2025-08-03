@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Conecta | Distribuidora de Medicamentos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="saludconecta logo.jpg" alt="logo saludconecta" class="logo"> 
+            <h1>Salud Conecta</h1>
+            <p>Distribuidora de medicamentos y tecnología médica</p>
+        </div>
+        <div class="login-form">
+         
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contraseña:</label>required
+                <input type="password" id="password" name="password" >
+                
+                <button onclick="login()">Iniciar Sesión</button>
+           
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="descarga.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="descarga.jpg" style="width:100%" onclick="currentSlide(1)" alt="Distribucion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="farmacia.jpg" style="width:100%" onclick="currentSlide(2)" alt="Productos">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="interior.jpg" style="width:100%" onclick="currentSlide(3)" alt="Instalaciones">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="fondo.jpg" style="width:100%" onclick="currentSlide(4)" alt="sucursal">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cruz.jpg" style="width:100%" onclick="currentSlide(5)" alt="Medicina">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cajon.jpg" style="width:100%" onclick="currentSlide(6)" alt="Almacenamiento">
+    </div>
+  </div>
+</div>
+
+    <main class="contenido principal">
+        <div class="texto">
+        <section class="bienvenida">
+            <h2>Bienvenido a Salud Conecta</h2>
+            <p>Somos una empresa especializada en la distribución de medicamentos, insumos médicos y tecnología de monitoreo biométrico en Colombia.</p>
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <ul>
+                <li>Medicamentos genéricos y de marca</li>
+                <li>Dispositivos biométricos (manillas de monitoreo)</li>
+                <li>Equipos médicos y hospitalarios</li>
+                <li>Suplementos y productos farmacéuticos</li>
+            </ul>
+        </section>
+
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <p>Email: contacto@saludconecta.com</p>
+            <p>Teléfono: +57 302 330 6008</p>
+            <p>Dirección: Carrera 35 #45-67, Bucaramanga, Colombia</p>
+        </section>
+        </div>
+
+        <div class="imagen lateral">
+
+            <img src="fondo-costado.jpg" alt="imagen lateral">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Salud Conecta. Todos los derechos reservados.</p>
+    </footer>
+    <script src="usuario.js"></script>
+</body>
+</html>

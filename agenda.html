@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SaludConecta - Citas Médicas</title>
+  <link rel="stylesheet" href="agenda.css" />
+</head>
+<body>
+  <header>
+    <h1>SaludConecta</h1>
+    <h2>Agendamiento de Citas Médicas</h2>
+  </header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#seguro">Seguro</a></li>
+      <li><a href="seccion.html">Sección</a></li>
+      <li><a href="#seguimiento">Seguimiento</a></li>
+    </ul>
+  </nav>
+  
+
+  <section class="formulario">
+    <form id="citaForm">
+      <input type="text" id="nombre" placeholder="Nombre del paciente" required />
+      <input type="text" id="cedula" placeholder="Cédula" required />
+      <select id="especialidad" required>
+        <option value="">Seleccione especialidad</option>
+        <option>Medicina General</option>
+        <option>Cardiología</option>
+        <option>Pediatría</option>
+        <option>Ginecología</option>
+        <option>Psicología</option>
+      </select>
+      <input type="datetime-local" id="fechaHora" required />
+      <button type="submit">Agendar cita</button>
+    </form>
+  </section>
+
+  <section class="tabla">
+    <h3>Citas Agendadas</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cédula</th>
+          <th>Especialidad</th>
+          <th>Fecha y Hora</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaCitas"></tbody>
+    </table>
+  </section>
+
+  <script src="agenda.js"></script>
+</body>
+</html>

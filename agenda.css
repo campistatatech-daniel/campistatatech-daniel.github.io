@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+  }
+  
+  header {
+    background: #0077b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .formulario {
+    padding: 20px;
+    background: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  button {
+    background: #00b4d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0096c7;
+  }
+  
+  .tabla {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  th {
+    background: #caf0f8;
+  }
+  
+  /* MENÚ DE NAVEGACIÓN */
+nav {
+    background-color: #023e8a;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .nav-menu a:hover {
+    color: #90e0ef;
+  }
+  
+  /* FORMATO DE SECCIONES */
+  section {
+    padding: 30px 20px;
+    background: #ffffff;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  

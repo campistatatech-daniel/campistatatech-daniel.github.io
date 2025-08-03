@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Salud Conecta</title>
+    <link rel="stylesheet" href="seccion.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Salud Conecta</h1>
+        <p>Tu portal de salud personalizado</p>
+
+        <div class="container">
+            <img src="saludconecta logo.jpg" alt="logo saludconecta" class="logo"> 
+        <header>
+            <button onclick="cerrarSesion()" style="position:absolute; top:10px; right:10px;">Cerrar Sesión</button>
+        </header>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#seguro">Seguro</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="#seguimiento">Seguimiento</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Accede a tu sección privada</h2>
+        <p>Explora las herramientas y servicios exclusivos diseñados para ti.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Salud Conecta. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function cerrarSesion() {
+            // Aquí puedes limpiar sesiones/localStorage si lo usas
+            window.location.href = "index.html"; // Redirige al inicio
+        }
+    </script>
+    <section class="datos-contacto">
+        <h2>Último contacto registrado</h2>
+        <div id="contacto-usuario">
+          <!-- Aquí se insertará el último contacto automáticamente -->
+        </div>
+      </section>
+      
+      <script src="ver-contactos.js"></script>
+      
+    
+</body>
+</html>

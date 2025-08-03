@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="contacto.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-wrapper">
+    <img src="saludconecta logo.jpg" alt="Logo de la empresa" class="logo" />
+
+    <div class="form-container">
+      <h2>Formulario de Contacto</h2>
+
+      <form id="contacto-form">
+        <div class="input-group">
+          <label for="nombre"><i class="fa fa-user"></i> Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="input-group">
+          <label for="ocupacion"><i class="fa fa-briefcase"></i> Ocupación:</label>
+          <input type="text" id="ocupacion" name="ocupacion" required />
+        </div>
+
+        <div class="input-group">
+          <label for="correo"><i class="fa fa-envelope"></i> Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+        </div>
+
+        <div class="input-group">
+          <label for="sexo"><i class="fa fa-venus-mars"></i> Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="celular"><i class="fa fa-phone"></i> Celular:</label>
+          <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required />
+          <small>10 dígitos (ej: 3001234567)</small>
+        </div>
+
+        <button type="submit"><i class="fa fa-paper-plane"></i> Enviar</button>
+
+        <p id="mensaje-exito" class="hidden">Formulario enviado con éxito ✅</p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Salud Conecta. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="contacto.js"></script>
+</body>
+</html>
+
